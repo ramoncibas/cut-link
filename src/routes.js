@@ -2,8 +2,8 @@ import React from "react";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { Ionicons } from "@expo/vector-icons";
 
-import Home from "./Home";
-import MyLinks from "./MyLinks";
+import Home from "./pages/Home";
+import MyLinks from "./pages/MyLinks";
 
 const Drawer = createDrawerNavigator();
 
