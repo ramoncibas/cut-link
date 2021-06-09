@@ -30,6 +30,8 @@ import Menu from "../../components/Menu";
 import ModalLink from "../../components/ModalLink";
 import api from "../../services/api"
 
+import { saveLink } from "../../utils/storeLinks"
+
 export default function Home() {
   const [loading, setLoading] = useState(false);
   const [inputText, setInputText] = useState("");
@@ -49,6 +51,9 @@ export default function Home() {
       setData(response.data);
       setModalVisible(true);
       
+      // Save link
+      saveLink("cutlink", response.data);
+
       Keyboard.dismiss();
       
       setLoading(false);
