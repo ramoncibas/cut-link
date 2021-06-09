@@ -1,4 +1,6 @@
 import axios from "axios";
+
+// Environment variables with Api key and base_url
 import { API_KEY, BASE_URL } from "@env";
 
 const api = axios.create({
