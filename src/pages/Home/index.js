@@ -43,10 +43,7 @@ export default function Home() {
     setLoading(true);
 
     try {
-      const response = await api.post("/shorten",
-      {
-        long_url: inputText
-      })
+      const response = await api.post("/shorten", {long_url: inputText});
 
       setData(response.data);
       setModalVisible(true);

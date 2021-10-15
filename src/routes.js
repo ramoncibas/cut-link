@@ -12,7 +12,7 @@ function Routes() {
     <Drawer.Navigator>
       <Drawer.Screen
         name="Home"
-        component={ Home }
+        component={Home}
         options={{
           title: "Encurtar Link",
           drawerIcon: ({ color, size, focused }) => (
@@ -27,7 +27,7 @@ function Routes() {
 
       <Drawer.Screen
         name="MyLinks"
-        component={ MyLinks }
+        component={MyLinks}
         options={{
           title: "Meus Links",
           drawerIcon: ({ color, size, focused }) => (

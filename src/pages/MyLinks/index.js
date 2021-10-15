@@ -38,6 +38,7 @@ export default function MyLinks() {
     setModalVisible(true);
   }
 
+  // Delete link by id from AsyncStorage
   async function handleDelete(id) {
     const result = await deleteLink(links, id);
     setLinks(result);
@@ -67,9 +68,9 @@ export default function MyLinks() {
       <ListLinks
         data={ links }
         keyExtractor={(item) => String(item.id)}
-        renderItem={({ item }) => <ListItem data={item} selectedItem={ handleItem } deleteItem={ handleDelete }/>}
+        renderItem={({ item }) => <ListItem data={item} selectedItem={handleItem} deleteItem={handleDelete}/>}
         contentContainerStyle={{ paddingBottom: 20 }}
-        showsVerticalScrollIndicator={ false }
+        showsVerticalScrollIndicator={false}
       />
 
       <Modal visible={ modalVisible } transparent animationType="slide">
