@@ -3,9 +3,9 @@
   <img src="src/assets/logo.png" width="40" height="40" align="center">
 </h1>
 
-<div>
-  <img src="https://user-images.githubusercontent.com/63371945/137554098-20bec59a-eb28-4ec6-9554-33156fb4c91d.gif" />
-  <img src="https://user-images.githubusercontent.com/63371945/137557778-e669f450-f1a4-462c-86ef-34273c7a4339.png" width="480" height="800"/>
+<div display="flex" max-width="400px">
+  <img src="https://user-images.githubusercontent.com/63371945/137554098-20bec59a-eb28-4ec6-9554-33156fb4c91d.gif" width="400" height="720"/>
+  <img src="https://user-images.githubusercontent.com/63371945/137557778-e669f450-f1a4-462c-86ef-34273c7a4339.png" width="400" height="720"/>
 </div>
 
 <p align="center">
